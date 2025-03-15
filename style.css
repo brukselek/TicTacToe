@@ -19,6 +19,12 @@ h1{
    background-color: #e4e3de;
    width: 150px;
    height: 150px;
+   font-size: 40px;
+   font-family: Monaco;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
    border: 1px solid #c4c6bb;
    border-radius: 3px;
 }
