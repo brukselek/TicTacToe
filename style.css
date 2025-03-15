@@ -27,6 +27,8 @@ h1{
    align-items: center;
    border: 1px solid #c4c6bb;
    border-radius: 3px;
+   color: #1b1b1b;
+   font-weight: 500
 }
 .cell:hover{
    background-color: #c4c6bb;
