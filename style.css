@@ -31,11 +31,13 @@ h1{
 .cell:hover{
    background-color: #c4c6bb;
 }
-#resetButton{
+#gameOptions{
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+}
+#gameOptions input{
    display: block;
-   margin-top: 20px;
-   margin-left: auto;
-   margin-right: auto;
    height: 40px;
    width: 150px;
    background-color: #c4c6bb;
@@ -46,7 +48,7 @@ h1{
    transition: ease-in-out 0.5s;
    cursor: pointer;
 }
-#resetButton:hover{
+#gameOptions input:hover{
    transition: ease-in-out 0.5s;
    background-color: #6c6f5d;
    color: #e4e3de;
