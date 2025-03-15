@@ -29,18 +29,23 @@ const winningCombinations = [
       [2, 4, 6]
 ];
 
+//flag to track the game status
+let gameOver = false;
+
 for(let i = 0; i < cells.length; i++){
    cells[i].addEventListener('click', () => {
-      if(cells[i].textContent !== ''){
+      if(cells[i].textContent !== '' || gameOver){
          return;
       }
       cells[i].textContent = currentPlayer;
       if(checkWin(currentPlayer)){
          endMessage.textContent = `Game over! ${currentPlayer} wins!`;
+         gameOver = true;
          return;
       }
       if(checkTie()){
          endMessage.textContent = `Game is tied!`;
+         gameOver = true;
          return;
       }
       currentPlayer = (currentPlayer === players[0]) ? players[1] : players[0] 
